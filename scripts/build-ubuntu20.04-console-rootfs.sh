@@ -43,6 +43,7 @@ passwd
 cat <<EOT >> /etc/securetty
 # Seral Port for Xilinx Zynq
 ttyPS0
+ttyPS1
 EOT
 
 #### Add fpga user
@@ -129,7 +130,8 @@ chown fpga.fpga -R /home/fpga/debian
 
 #### Install Linux Image and Header Debian Packages
 
-dpkg -i home/fpga/debian/linux-image-5.4.0-xlnx-v2020.2-zynqmp-fpga_5.4.0-xlnx-v2020.2-zynqmp-fpga-1_arm64.deb
+dpkg -i home/fpga/debian/linux-image-5.10.0-xlnx-v2021.1-zynqmp-fpga_5.10.0-xlnx-v2021.1-zynqmp-fpga-4_arm64.deb
+dpkg -i home/fpga/debian/linux-headers-5.10.0-xlnx-v2021.1-zynqmp-fpga_5.10.0-xlnx-v2021.1-zynqmp-fpga-4_arm64.deb
 
 #### Clean Cache
 

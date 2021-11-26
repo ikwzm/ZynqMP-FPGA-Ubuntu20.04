@@ -106,6 +106,7 @@ To be able to login as root from Zynq serial port.
 ubuntu20.04-rootfs# cat <<EOT >> /etc/securetty
 # Seral Port for Xilinx Zynq
 ttyPS0
+ttyPS1
 EOT
 ```
 
@@ -232,6 +233,7 @@ ubuntu20.04-rootfs# chown fpga.fpga -R home/fpga/debian
 
 ```console
 ubuntu20.04-rootfs# dpkg -i home/fpga/debian/linux-image-5.10.0-xlnx-v2021.1-zynqmp-fpga_5.10.0-xlnx-v2021.1-zynqmp-fpga-4_arm64.deb
+ubuntu20.04-rootfs# dpkg -i home/fpga/debian/linux-headers-5.10.0-xlnx-v2021.1-zynqmp-fpga_5.10.0-xlnx-v2021.1-zynqmp-fpga-4_arm64.deb
 ```
 
 #### Clean Cache
