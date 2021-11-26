@@ -220,6 +220,15 @@ ubuntu20.04-rootfs# apt-get install -y haveged
 ubuntu20.04-rootfs# apt-get install -y network-manager
 ```
 
+#### Make eth0 managed by network-manager
+
+```console
+ubuntu20.04-rootfs# cat <<EOT >/etc/NetworkManager/conf.d/10-globally-managed-devices.conf
+[keyfile]
+unmanaged-devices=none
+EOT
+```
+
 #### Move Debian Package to /home/fpga/debian
 
 ```console

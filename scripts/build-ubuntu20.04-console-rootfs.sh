@@ -121,6 +121,13 @@ apt-get install -y haveged
 
 apt-get install -y network-manager
 
+#### Make eth0 managed by network-manager
+
+cat <<EOT >/etc/NetworkManager/conf.d/10-globally-managed-devices.conf
+[keyfile]
+unmanaged-devices=none
+EOT
+
 #### Move Debian Package to /home/fpga/debian
 
 mkdir /home/fpga/debian
