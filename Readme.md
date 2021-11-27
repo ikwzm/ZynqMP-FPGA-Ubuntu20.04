@@ -75,4 +75,4 @@ Build
   + [Ultra96](doc/build/ultra96-boot.md)
   + [Ultra96-V2](doc/build/ultra96v2-boot.md)
 * [Build Linux Kernel](doc/build/linux-kernel.md)
-* [Build Ubuntu 20.04 Desktop RootFS](doc/build/ubuntu20.04-desktop.md)
+* [Build Ubuntu 20.04 Console RootFS](doc/build/ubuntu20.04-console.md)
